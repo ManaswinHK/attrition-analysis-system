@@ -4,6 +4,8 @@ A web application that lets any organization keep track of employees leaving, un
 
 Software Engineering Lab mini project, Section B.
 
+The sprints were run in [ManaswinHK/SE-TEAM-11-MINI](https://github.com/ManaswinHK/SE-TEAM-11-MINI). This repository was rebuilt from it so each member raised the PRs for their own stories; the code is identical. See [Repository rebuild](docs/DEVIATIONS.md#repository-rebuild-8-9-nov-2026).
+
 | Name | SRN |
 |---|---|
 | H K Manaswin | PES1UG24AM108 |
