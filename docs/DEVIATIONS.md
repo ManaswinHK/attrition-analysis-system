@@ -60,5 +60,16 @@ Test cases changed by the sprints are in `test-cases.csv`, and the Test Plan is 
 - AAS-21 (Sprint 1 video) was moved to Done before the video was recorded; the video was added on 7 Nov.
 - Sprint 2 work planned for 5-6 Nov was done on 7 Nov.
 - The demo videos were recorded by a script that drives the real application in a browser (`demo/record_demo.py`), with on-screen captions instead of narration. The Sprint 1 video was recorded from the code as it was at the end of Sprint 1.
-- PRs #1-#18 and the final Sprint 2 PRs were raised from the repository owner's account, with teammates listed as co-authors on commits, and were merged without a formal review.
 - The backlog was managed in Jira, and was copied to the GitHub Project "AAS Backlog" on 4 Nov when the evaluation checklist arrived. Issue numbers there differ from the Jira keys, which are in each title.
+
+## Repository rebuild (8-9 Nov 2026)
+
+The sprints were run in the original repository, [ManaswinHK/SE-TEAM-11-MINI](https://github.com/ManaswinHK/SE-TEAM-11-MINI), which is kept unchanged as the record of the sprint work and dates. There, every PR was raised from the repository owner's account (teammates were listed as co-authors on commits) and merged without a formal review, so the PR history did not show who owned which story.
+
+This repository was rebuilt from it on 8-9 Nov 2026 so that each member raises the PRs for their own stories:
+
+- The code is the same. Each story from the original repository became one patch, applied in the original order, and the final code here is identical to the original `main` (tag v1.0 there, commit 5b0b3e3).
+- Each member applied their own patches, committed under their own account and opened the PR. Every teammate PR was reviewed and approved by the repository owner before merging, and CI ran on every PR.
+- Branches were stacked (each built on the previous story's branch) and merged strictly in story order, so commit and PR dates here are 8-9 Nov, not the sprint dates. The sprint dates are in the original repository, Jira and the burndown charts.
+- Issues #1-#30 here correspond to AAS-9 to AAS-38 (issue number = Jira number − 8). Each PR closes its issues with `Closes #N`.
+- AAS-17, AAS-19 and AAS-20 are built into the same code as AAS-16, AAS-18 and AAS-10, so they shipped in those PRs; each PR says so.
